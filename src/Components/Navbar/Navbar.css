@@ -1,0 +1,53 @@
+.n-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 0vw 5vw;
+}
+
+.n-left {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+}
+
+.n-name {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.n-right {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+.n-list {
+    flex: 10;
+}
+
+.n-list>ul {
+    display: flex;
+    gap: 2rem;
+    margin-right: 2rem;
+}
+
+.n-list ul li:hover ,#contactButton a:hover{
+    cursor: pointer;
+    color: var(--orange);
+}
+
+.n-button{
+    flex:2;
+
+}
+
+@media screen  and (max-width:480px){
+    .n-list>ul{
+        display: none;
+    }
+}

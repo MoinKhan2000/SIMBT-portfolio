@@ -1,0 +1,138 @@
+.services {
+    display: flex;
+    margin-top: 0rem;
+    height: fit-content;
+    /* margin-bottom: 8rem; */
+    /* flex-direction: column; */
+    padding: 4vw 4vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.awesome {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 1;
+    justify-content: center;
+}
+
+.awesome>:nth-child(1) {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.awesome>:nth-child(2) {
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.awesome>:nth-child(3) {
+    color: var(--gray);
+    font-size: 15px;
+    margin-top: 1rem
+}
+
+.s-button {
+    width: 10rem;
+    height: 2rem;
+    margin-top: 1rem;
+}
+
+.s-blur1 {
+    background: rgba(171, 241, 255, 0.58);
+    top: 13rem;
+    left: -13rem;
+    filter: blur(124px);
+}
+
+.s-blur2 {
+    top: 18rem;
+    background: #edd0ff;
+    left: 46rem;
+    filter: blur(97px);
+}
+
+.cards {
+    position: relative;
+}
+
+.cards>* {
+    position: absolute;
+}
+
+.firstCard {
+    top: 0rem;
+    left: 24rem
+}
+
+.secondCard {
+    top: 10rem;
+    left: 0rem;
+}
+
+.thirdCard {
+    left: 13rem;
+    top: 15rem;
+}
+
+.cards {
+    position: relative;
+    flex: 1.5;
+    /* border: 2px solid; */
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:480px) {
+    .services {
+        padding: 0;
+        display: flex;
+        margin-top: 1rem;
+        height: fit-content;
+        margin-bottom: 8rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        min-height: -moz-fit-content;
+        min-height: fit-content;
+        position: relative;
+        margin-bottom: 1rem;
+    }
+
+    .awesome {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* border: 2px solid black; */
+        padding: 2rem;
+        padding-top: 0;
+    }
+
+    .firstCard,
+    .secondCard,
+    .thirdCard {
+        left: 0;
+        top: 0;
+    }
+
+    .cards {
+        position: relative;
+        width: 50vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+}

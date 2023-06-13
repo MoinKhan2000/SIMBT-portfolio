@@ -1,0 +1,116 @@
+.experience {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin: 5rem;
+    height: 30vh;
+}
+
+.achivements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circle {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    background: white;
+    position: relative;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    box-shadow: var(--boxShadow);
+}
+
+.circle::before {
+    border-radius: 100%;
+    content: "";
+    background-image: linear-gradient(to bottom, #87e6fb, var(--orange));
+    z-index: -1;
+    top: -8px;
+    left: -8px;
+    bottom: -8px;
+    right: -8px;
+    position: absolute;
+}
+
+.achivements>span:nth-of-type(2) {
+    color: var(--orange);
+}
+
+.exp {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex: 1;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    padding: 0vw 4vw;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    flex: 1;
+    gap: .51rem;
+}
+
+.desc>:nth-child(1) {
+    color: var(black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.desc>:nth-child(2) {
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.desc>:nth-child(3) {
+    color: var(--gray);
+    font-size: 15px;
+    margin-top: 1rem
+}
+
+@media screen and (max-width:480px) {
+    .experience {
+        gap: 1rem;
+        margin-bottom: 0rem;
+        margin: 0;
+    }
+
+    .exp {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        flex: 1 1;
+        margin-bottom: 1rem;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-wrap: wrap;
+        position: relative;
+        height: fit-content;
+        margin-bottom: 1rem;
+    }
+
+    .desc {
+        align-items: center;
+
+    }
+}

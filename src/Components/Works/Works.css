@@ -1,0 +1,143 @@
+.works {
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.w-blur1 {
+    background: #cff5ff;
+    filter: blur(61px);
+    left: -9rem;
+    top: 13rem;
+}
+
+.w-blur2 {
+    background: #edd0ff;
+    filter: blur(65px);
+    z-index: -9;
+    left: 47rem;
+    top: -2rem;
+}
+
+.h-button {
+    width: 5%;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+    font-weight: bold;
+    padding: 1.54rem 2.5rem;
+    font-size: 20px;
+
+}
+
+
+.w-left {
+    padding: 0;
+    flex: 1;
+    margin: -5vw;
+}
+
+.w-right {
+    position: relative;
+    /* flex: 1; */
+
+}
+
+.w-mainCircle {
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    background: white;
+    box-shadow: var(--boxShadow);
+    filter: drop-shadow(2px 1px 13px #dadada);
+    border-radius: 50%;
+}
+
+.w-secCircle {
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+}
+
+
+.w-mainCircle>* {
+    position: absolute;
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(21deg) brightness(118%) contrast(119%);
+}
+
+.w-secCircle:nth-child(1) {
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(196deg) brightness(113%) contrast(65%);
+    top: -2rem;
+    left: 6.4rem;
+}
+
+.w-secCircle:nth-child(2) {
+    filter: invert(48%) sepia(8679%) saturate(5176%) hue-rotate(-1604deg) brightness(82%) contrast(60%);
+    top: 15rem;
+    left: 6.3rem;
+}
+
+.w-secCircle:nth-child(3) {
+    top: 6rem;
+    left: 15rem;
+}
+
+.w-secCircle:nth-child(4) {
+    filter: invert(48%) sepia(79%) saturate(10176%) hue-rotate(221deg) brightness(96%) contrast(19%);
+    top: 6rem;
+    left: -2rem;
+
+}
+
+.w-secCircle:nth-child(5) {
+    filter: none;
+    top: 6.2rem;
+    left: 6.5rem;
+    transform: scale(1.5);
+
+}
+
+.w-secCircle img {
+    width: 100px;
+    position: relative;
+}
+
+@media screen and (max-width:480px) {
+
+    .works {
+        display: flex;
+        height: fit-content;
+        margin-top: 4rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+    }
+
+    .w-left {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .w-mainCircle {
+        display: flex;
+        transform: scale(0.8);
+        left: 0;
+    }
+
+    .w-right {
+        flex: 1
+    }
+
+
+}
